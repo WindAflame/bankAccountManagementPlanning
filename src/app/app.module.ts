@@ -2,14 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { AppRoutes } from './routing/app.routes';
+import { AppRoutes } from './_routing/app.routes';
 
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
-import { AuthentificationService } from './services/authentification.service';
+import { AuthentificationService } from './_services/authentification.service';
 
 
 @NgModule({
