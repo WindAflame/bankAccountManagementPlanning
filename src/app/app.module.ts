@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
-import { AppRoutes } from './_routing/app.routes';
+import { AppRoutesModule } from './_routing/routes.module';
 
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
@@ -21,7 +19,7 @@ import { AuthentificationService } from './_services/authentification.service';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(AppRoutes)
+    AppRoutesModule
   ],
   providers: [
     AuthentificationService
