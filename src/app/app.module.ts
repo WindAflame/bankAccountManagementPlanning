@@ -1,31 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-
-import { AuthentificationService } from './shared/authentification.service';
-import { AppRoutesModule } from './app.routes';
 import { AppComponent } from './app.component';
-import { AppHeaderComponent } from './shared/components/header/header.component';
-import { AppMainComponent } from './shared/components/main/main.component';
-import { PageNotFoundComponent } from './shared/components/page-not-found/page-not-found.component';
-import { HomeModule } from './home/home.module';
+import { TemplateComponent } from './template/template.component';
+import { HeaderComponent } from './template/header/header.component';
+import { FooterComponent } from './template/footer/footer.component';
 
+import { AppRoutes } from './app.routes';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppHeaderComponent,
-    AppMainComponent,
-    PageNotFoundComponent
+    TemplateComponent,
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutesModule,
-    HomeModule
+    RouterModule.forRoot(AppRoutes)
   ],
-  providers: [
-    AuthentificationService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
