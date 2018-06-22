@@ -46,6 +46,7 @@ Afin de générer facilement un json. La BDD n'aura qu'une table.
 | Colonne | Type | Description |
 |---|---|---|
 | id | serial | x |
+| name | string | x |
 | credit* | double | x |
 | debit* | double | x |
 | catégorie | string | x |
